@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" class="ref">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    <nav class="topnav" id="navbar">
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    
+    <section id="welcome-section">
+      <h1>Akshay Vinod</h1>
+      <p>Aspiring Developer</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+          <a href="https://codepen.io/akshayvinodpunnath/pen/pojYJJa" class="project">
+            <img src="Tribute.JPG" alt="" class="project-image">
+            <p>Tribute Page</p>
+          </a>
+          <a href="https://codepen.io/akshayvinodpunnath/pen/JjYzLZN" class="project">
+            <img src="TechnicalDocumentation.JPG" alt="" class="project-image">
+            <p>Python Technical Documentation</p>
+          </a>
+          <a href="https://github.com/akshayvinodpunnath/Inspirational-Quotes" class="project">
+            <img src="InspirationalQuotes.JPG" alt="" class="project-image">
+            <p>Inspirational Quotes</p>
+          </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Lets create beautiful solutions</h2>
+      <a id="profile-link" href="https://github.com/akshayvinodpunnath">
+        <i class="fab fa-github"></i>
+        Github
+      </a>
+      <a href="https://www.freecodecamp.org/akshayvinodpunnath">
+        <i class="fab fa-free-code-camp"></i>
+        freeCodeCamp
+      </a>
+      <a href="https://twitter.com/akshayvinodp">
+        <i class="fab fa-twitter"></i>
+        Twitter
+      </a>
+    </section>
+
+    <script>
+        function myFunction() {
+            const x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    
+    </body>
+</html>
